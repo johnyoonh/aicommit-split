@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aicommit-split"
+version = "0.1.0"
+description = "Split working-tree changes into deterministic semantic commit groups before running aicommit."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "John Yoon", email = "18730221+johnyoonh@users.noreply.github.com" },
+]
+keywords = ["git", "commit", "aicommit", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+aicommit-split = "aicommit_split.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/johnyoonh/aicommit-split"
+Repository = "https://github.com/johnyoonh/aicommit-split"
+Issues = "https://github.com/johnyoonh/aicommit-split/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
