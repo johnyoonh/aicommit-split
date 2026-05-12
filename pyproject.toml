@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Split working-tree changes into deterministic semantic commit groups before running aicommit."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = "PolyForm-Noncommercial-1.0.0"
 authors = [
     { name = "John Yoon", email = "18730221+johnyoonh@users.noreply.github.com" },
 ]
@@ -17,7 +17,7 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
+    "License :: Free for non-commercial use",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
